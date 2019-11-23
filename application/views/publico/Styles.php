@@ -24,16 +24,18 @@
    .link-button{
        width: 100%;
    }
-   video,audio{
+   video,img{
        display: block;
        margin: auto;
    }
    .card{
-       max-height: 700px;
+       padding: 10px;
    }
    .card img{
-       max-height: 300px;
+       max-height: 400px;
+       
        margin: auto;
+       
        
    }
 </style>

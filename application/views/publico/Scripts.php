@@ -23,6 +23,10 @@
     });
 </script>
 <script>
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, {});
+</script>
+<script>
     let donde = $("*");
     var sizeFuenteActual = donde.css('font-size');
 

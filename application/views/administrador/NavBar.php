@@ -21,7 +21,7 @@
             <a class="modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
     </div>
-    <nav>
+    <nav style="background:#272a5b">
         <div class="nav-wrapper container">
             <a href="/" class="brand-logo">ADMINISTRADOR</a>
 

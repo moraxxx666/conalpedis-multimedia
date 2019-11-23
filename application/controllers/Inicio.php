@@ -65,17 +65,17 @@ class Inicio extends CI_Controller
 		$data['id'] = $id;
 		if (is_numeric($id) &&  $this->administrador_model->EncontrarAlbum($id) != false) {
 			$data['coleccion'] = $this->administrador_model->EncontrarAlbum($id);
-			$data['libros'] = $this->administrador_model->ObtenerFotos($id);
+			$data['fotos'] = $this->administrador_model->ObtenerFotos($id);
 		} else {
 			$this->session->set_flashdata('mensaje', "No se Encuentra la Coleccion");
 			redirect('/Colecciones');
 		}
-		$data['titulo'] = $id;
+		$data['titulo'] = $data['coleccion']['nombre'];
 		$this->load->view('publico/Header', $data);
 		$this->load->view('publico/Styles');
 		$this->load->view('publico/FloatingButton');
 		$this->load->view('publico/NavBar');
-		$this->load->view('publico/Libros', $data);
+		$this->load->view('publico/Fotos', $data);
 		$this->load->view('publico/Footer');
 		$this->load->view('publico/Scripts');
 	}

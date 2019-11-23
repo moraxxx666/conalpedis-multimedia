@@ -9,7 +9,7 @@
             </p>
         </div>
         <div class="col s12 m6">
-            <img class="responsive-img imgb" src="<?php echo base_url() ?>public/biblioteca_conalpedis.jpg" alt="">
+            <img class="responsive-img imgb" src="<?php echo base_url() ?>public/multimedia_conalpedis.jpg" alt="">
         </div>
         
         <div class="col s12 m6">
