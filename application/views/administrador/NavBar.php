@@ -28,7 +28,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li>
-                   <a href=" <?php echo base_url()?>Administrador/Inicio">Colecciones</a>
+                    <a href=" <?php echo base_url() ?>Administrador/Inicio">Colecciones</a>
                 </li>
                 <li>
                     <form action="/Administrador/logout" method="POST">
@@ -40,8 +40,15 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        
-        <li><a class="waves-effect waves-light modal-trigger" href="#LoginModal">Cerrar Sesión</a></li>
+
+        <li>
+            <a href=" <?php echo base_url() ?>Administrador/Inicio">Colecciones</a>
+        </li>
+        <li>
+            <form action="/Administrador/logout" method="POST">
+                <button type="submit" class="btn blue">Cerrar Sesión</button>
+            </form>
+        </li>
     </ul>
 
 </header>
